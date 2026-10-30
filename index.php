@@ -49,5 +49,6 @@ features!</p>
 <a href="register.php" class="signup-link">Create Your 
 Account</a> 
 </div> 
+ </html> 
 </div> 
 </body>
