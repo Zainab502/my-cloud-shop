@@ -31,7 +31,7 @@
             background: white;
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             max-width: 500px;
             margin-top: 60px;
         }
@@ -68,31 +68,28 @@
 
 <body>
 
-    <div class="header">
-        <h1>MyShop</h1>
-        <p>Registration Successful</p>
+<div class="header">
+    <h1>MyShop</h1>
+    <p>Registration Successful</p>
+</div>
+
+<div class="success-message">
+
+    <div class="success-icon">✓</div>
+
+    <h2>Registration Successful!</h2>
+
+    <p>Your account has been created successfully. Welcome to MyShop!</p>
+
+    <div style="margin-top: 30px;">
+        <a href="index.php" class="btn">Go Back to Home</a>
+
+        <a href="register.php" class="btn btn-success">
+            Register Another User
+        </a>
     </div>
 
-    <div class="success-message">
-        <div class="success-icon">✓</div>
-
-        <h2>Registration Successful!</h2>
-
-        <p>
-            Your account has been created successfully.
-            Welcome to MyShop!
-        </p>
-
-        <div style="margin-top: 30px;">
-            <a href="index.php" class="btn">
-                Go Back to Home
-            </a>
-
-            <a href="register.php" class="btn btn-success">
-                Register Another User
-            </a>
-        </div>
-    </div>
+</div>
 
 </body>
 </html>

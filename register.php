@@ -30,7 +30,7 @@
             background: white;
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             width: 100%;
             max-width: 400px;
             margin-top: 60px;
@@ -85,70 +85,48 @@
 
 <body>
 
-    <div class="header">
-        <h1>MyShop</h1>
-        <p>Create Your Account</p>
-    </div>
+<div class="header">
+    <h1>MyShop</h1>
+    <p>Create Your Account</p>
+</div>
 
-    <div class="register-form">
-        <h2>Register</h2>
+<div class="register-form">
+    <h2>Register</h2>
 
-        <!-- Display error message if present -->
-        <?php if (isset($_GET['error'])): ?>
-            <div class="error">
-                <?php echo htmlspecialchars($_GET['error']); ?>
-            </div>
-        <?php endif; ?>
+    <?php if (isset($_GET['error'])): ?>
+        <div class="error">
+            <?php echo htmlspecialchars($_GET['error']); ?>
+        </div>
+    <?php endif; ?>
 
-        <!-- Form submits to process_register.php -->
-        <form method="post" action="process_register.php">
+    <form method="post" action="process_register.php">
 
-            <div class="form-group">
-                <label>Full Name *</label>
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Enter your full name"
-                    required
-                >
-            </div>
+        <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" name="name" placeholder="Enter your full name" required>
+        </div>
 
-            <div class="form-group">
-                <label>Email *</label>
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required
-                >
-            </div>
+        <div class="form-group">
+            <label>Email *</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
 
-            <div class="form-group">
-                <label>Password *</label>
-                <input
-                    type="password"
-                    name="password"
-                    placeholder="Enter your password"
-                    required
-                >
-            </div>
+        <div class="form-group">
+            <label>Password *</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+        </div>
 
-            <div class="form-group">
-                <input
-                    type="submit"
-                    class="btn"
-                    value="Register"
-                >
-            </div>
+        <div class="form-group">
+            <input type="submit" class="btn" value="Register">
+        </div>
 
-        </form>
+    </form>
 
-        <p style="text-align: center;">
-            <a href="index.php">Back to Home</a>
-        </p>
-    </div>
+    <p style="text-align: center;">
+        <a href="index.php">Back to Home</a>
+    </p>
+
+</div>
 
 </body>
 </html>
-</div> 
-</body> 
