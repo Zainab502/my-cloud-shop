@@ -1,7 +1,7 @@
 <?php
 
 // Simple database connection
-$serverName = "tcp:mycardiffmet.database.windows.net,1433";
+$serverName = "tcp:tcp:mycardiffmet2.database.windows.net";
 
 $connectionOptions = array(
     "Database" => "myDatabase",
