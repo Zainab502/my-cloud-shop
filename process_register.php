@@ -2,13 +2,13 @@
 
 // Simple database connection
 
-$serverName = getenv('server_name');
+$serverName = getenv('server_Name');
 
 $connectionOptions = array(
     "Database" => getenv('myDatabase'),
     "Uid"      => getenv('myUsername'),
     "PWD"      => getenv('PWD'),
-    "Encrypt" => 1,
+    "Encrypt" => true,
     "TrustServerCertificate" => 1
 );
 
