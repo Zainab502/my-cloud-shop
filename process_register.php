@@ -2,7 +2,7 @@
 
 // Simple database connection
 
-$serverName = getenv('server_Name');
+$serverName = getenv('server_name');
 
 $connectionOptions = array(
     "Database" => getenv('myDatabase'),
