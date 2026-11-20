@@ -2,8 +2,11 @@
 
 // Simple database connection
 $serverName = "tcp:mycardiffmet2.database.windows.net,1433";
-
+$serverName = getenv('server_Name');
 $connectionOptions = array(
+    "Database" => getenv('myDatabase'),
+    "Uid"      => getenv('myUsername'),
+    "PWD"      => getenv('PWD'),
     "Encrypt" => 1,
     "TrustServerCertificate" => 1
 );
