@@ -6,7 +6,7 @@ $serverName = "tcp:mycardiffmet2.database.windows.net,1433";
 $connectionOptions = array(
     "Database" => "myDatabase",
     "Uid" => "myadmin",
-    "PWD" => "Mohammed54@",
+    "PWD" => "Orange123£",
     "Encrypt" => 1,
     "TrustServerCertificate" => 1
 );
