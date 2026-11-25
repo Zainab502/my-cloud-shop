@@ -2,6 +2,10 @@
 
 // Simple database connection
 
+var_dump(getenv('myUsername')); var_dump(getenv('myDatabase')); 
+var_dump(getenv('server_Name')); 
+exit();
+
 $serverName = getenv('server_Name');
 
 $connectionOptions = array(
@@ -23,6 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!empty($name) && !empty($email) && !empty($password)) {
 
         // Connect to database
+        echo "<pre>";
+        var_dump(getenv('myUsername'));
+        var_dump(getenv('myDatabase'));
+        var_dump(getenv('server_Name'));
+        exit();
         $conn = sqlsrv_connect($serverName, $connectionOptions);
 
         if ($conn) {
