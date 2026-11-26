@@ -2,8 +2,11 @@
 
 // Simple database connection
 
-var_dump(getenv('myUsername')); var_dump(getenv('myDatabase')); 
+var_dump(getenv('myUsername'));
+var_dump(getenv('myDatabase')); 
 var_dump(getenv('server_Name')); 
+var_dump(getenv('Password')); 
+
 exit();
 
 $serverName = getenv('server_Name');
