@@ -11,7 +11,7 @@ $serverName = getenv('server_Name');
 $connectionOptions = array(
     "Database" => getenv('myDatabase'),
     "Uid"      => getenv('myUsername'),
-    "PWD"      => getenv('PWD'),
+    "PWD"      => getenv('Password'),
     "Encrypt" => true,
     "TrustServerCertificate" => 1
 );
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
        var_dump(getenv('myUsername'));
        var_dump(getenv('myDatabase'));
        var_dump(getenv('server_Name'));
-       var_dump(getenv('PWD'));
+       var_dump(getenv('Password'));
        exit();
         
         $conn = sqlsrv_connect($serverName, $connectionOptions);
