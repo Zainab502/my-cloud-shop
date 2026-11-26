@@ -27,11 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!empty($name) && !empty($email) && !empty($password)) {
 
         // Connect to database
-        echo "<pre>";
-        var_dump(getenv('myUsername'));
-        var_dump(getenv('myDatabase'));
-        var_dump(getenv('server_Name'));
-        exit();
+       echo "<pre>";
+       var_dump(getenv('myUsername'));
+       var_dump(getenv('myDatabase'));
+       var_dump(getenv('server_Name'));
+       var_dump(getenv('PWD'));
+       exit();
+        
         $conn = sqlsrv_connect($serverName, $connectionOptions);
 
         if ($conn) {
